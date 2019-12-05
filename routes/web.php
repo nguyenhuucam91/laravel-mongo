@@ -17,3 +17,21 @@ Route::get('/', function () {
 
 
 Route::resource('students', 'StudentController');
+Route::resource('courses', 'CourseController');
+Route::resource('enrolments', 'EnrolmentController');
+// Route::get('enrolments/create', function() {
+//     $enrolment = new App\Enrolment();
+//     //store embeded single object in enrolment
+//     // $enrolment->user = ['name' => 'camnh'];
+//     //store embedded array in enrolment
+//     $enrolment->user = [['name' => 'camnh'], ['name' => 'abc']];
+//     //store multiple objects in array in single document
+//     $enrolment->course = ['name' => 'bc'];
+//     $enrolment->mark = 9;
+//     $enrolment->save();
+// });
+
+// Route::get('/enrolments/1', function() {
+//     $enrolment = App\Enrolment::all()->first();
+//     return $enrolment;
+// });

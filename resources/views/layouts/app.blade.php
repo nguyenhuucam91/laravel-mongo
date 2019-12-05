@@ -25,7 +25,7 @@
         
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             
-        <h2>Section title</h2>
+      	<h2>@yield('title')</h2>
         @yield('content')
           
         </main>
